@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "open-uri"
+require "resolv"
+require "ipaddr"
 
 class Upload < ApplicationRecord
   include PgSearch::Model
@@ -81,10 +83,33 @@ class Upload < ApplicationRecord
     )
   end
 
+  # Validate that a URL is safe to fetch (not targeting internal networks)
+  def self.assert_public_url!(url)
+    uri = URI.parse(url)
+
+    unless %w[http https].include?(uri.scheme&.downcase)
+      raise ArgumentError, "URL scheme must be http or https."
+    end
+
+    addrs = Resolv.getaddresses(uri.host)
+    raise ArgumentError, "Couldn't resolve host." if addrs.empty?
+
+    addrs.each do |addr_str|
+      ip = IPAddr.new(addr_str)
+      raise ArgumentError, "Couldn't resolve host." if ip.loopback? || ip.private? || ip.link_local?
+    end
+  end
+
   # Create upload from URL (for API/rescue operations)
   def self.create_from_url(url, user:, provenance:, original_url: nil, authorization: nil, filename: nil)
+    assert_public_url!(url)
+
+    redirect_validator = proc do |_response_env, new_request_env|
+      assert_public_url!(new_request_env[:url].to_s)
+    end
+
     conn = Faraday.new(ssl: { verify: true, verify_mode: OpenSSL::SSL::VERIFY_PEER }) do |f|
-      f.response :follow_redirects, limit: 5
+      f.response :follow_redirects, limit: 5, callback: redirect_validator
       f.adapter Faraday.default_adapter
     end
     conn.options.open_timeout = 30
