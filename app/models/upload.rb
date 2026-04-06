@@ -13,6 +13,7 @@ class Upload < ApplicationRecord
   belongs_to :blob, class_name: "ActiveStorage::Blob"
 
   after_destroy :purge_blob
+  after_destroy :purge_cdn_cache
 
   # Delegate file metadata to blob (no duplication!)
   delegate :filename, :byte_size, :content_type, :checksum, to: :blob
@@ -159,4 +160,6 @@ class Upload < ApplicationRecord
   rescue Aws::S3::Errors::NoSuchKey
     Rails.logger.info("Blob #{blob.key} already deleted from S3, skipping purge")
   end
+
+  def purge_cdn_cache = PurgeCloudflareCacheJob.perform_later(assets_url)
 end
