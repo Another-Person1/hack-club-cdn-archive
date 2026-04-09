@@ -24,22 +24,22 @@
 
 ---
 
-## Original repo description (unchanged):
-<div align="center">
+## Original repo description (unchanged except to disable external hosted links):
+<!-- <div align="center">
   <img src="https://assets.hackclub.com/flag-standalone.svg" width="100" alt="flag">
   <h1>cdn.hackclub.com</h1>
-</div>
+</div> -->
 
 <p align="center"><i>Deep under the waves and storms there lies a <a href="https://app.slack.com/client/T0266FRGM/C016DEDUL87">vault</a>...</i></p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://files.catbox.moe/6fpj0x.png" width="100%" alt="Banner">
   <p align="center">Banner illustration by <a href="https://gh.maxwofford.com">@maxwofford</a>.</p>
 
   <a href="https://app.slack.com/client/T0266FRGM/C016DEDUL87">
     <img alt="Slack Channel" src="https://img.shields.io/badge/slack-%23cdn-blue.svg?style=flat&logo=slack">
   </a>
-</div>
+</div> --->
 
 ---
 
