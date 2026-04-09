@@ -22,6 +22,10 @@
 >
 > * Trademark Notice: All third-party trademarks mentioned (including but not limited to Hack Club, HCB, and The Hack Foundation) are the property of their respective owners. **The archiver claims no ownership rights over any third-party trademarks mentioned herein.**
 
+Technical Safety Note:
+
+All passive tracking pixels, hotlinked assets, and telemetry badges have been DEFANGED to prevent the Hack Club infrastructure (Nora/Max) from logging the IP addresses of researchers. The only active link remaining is the direct invitation to the Slack environment, which should only  be accessed if necessary using appropriate secure procedures.
+
 ---
 
 ## Original repo description (unchanged except to disable external hosted links):
