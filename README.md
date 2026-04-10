@@ -1,10 +1,11 @@
-# HCB Archive
+# Hack Club CDN Archive
 >[!CAUTION]
 >
 >**TECHNICAL AUDIT NOTICE**
 >
->This repository is a **static archive** preserved for forensic auditing and youth safeguarding oversight.
+>This repository is **a static archive** preserved for forensic auditing and youth safeguarding oversight.
 >
+>All technical liability, privacy inquiries, or complaints regarding these operations **must be directed to Hack Club's leadership and engineering staff** via the contact information on the [Hack Club GitHub organization](https://github.com/orgs/hackclub/people) or on the official [Hack Club website](https://hackclub.com).
 
 > [!IMPORTANT]
 > 
@@ -18,17 +19,17 @@
 >
 > * Purpose of Archive: **This repository is maintained strictly for security and privacy audits, legal documentation, historical archival, and forensic research using simulated/synthetic data.** It serves as a public interest case study in the degradation of nonprofit transparency and as a technical reference for the ethical failures of centralized youth surveillance infrastructure.
 >
-> * Non-Affiliation: The archiver (the owner of this fork) **is not a contributor to this project**, has **no affiliation with the original authors** (**including but not limited to** [@]24c02, [@]3kh0, Hack Club, or the Hack Foundation), and **assumes no responsibility for the function or deployment of this code.**
+> * Non-Affiliation: The archiver (the owner of this fork) **is not a contributor to this project**, has **no affiliation with the original authors** (**including but not limited to** [@]3kh0, [@]24c02, other Hack Club employees/contractors on this repository, Hack Club, or the Hack Foundation), and **assumes no responsibility for the function or deployment of this code.**
 >
-> * Trademark Notice: All third-party trademarks mentioned (including but not limited to Hack Club, HCB, and The Hack Foundation) are the property of their respective owners. **The archiver claims no ownership rights over any third-party trademarks mentioned herein.**
+> * Trademark Notice: All third-party trademarks mentioned (including but not limited to Hack Club, and The Hack Foundation) are the property of their respective owners. **The archiver claims no ownership rights over any third-party trademarks mentioned herein.**
 
-Technical Safety Note:
-
-All passive tracking pixels, hotlinked assets, and telemetry badges have been DEFANGED to prevent the Hack Club infrastructure management (Nora/Max/Zach/etc.) from logging the IP addresses of researchers. The only active link remaining is the direct invitation to the Slack environment, which should only  be accessed if necessary using appropriate secure procedures.
+> [!NOTE]
+>
+> Any links below the divider line link to Hack Club owned/operated servers on the internet. **I do not control the links below**, so visit them at your own risk using appropriate cybersecurity procedures as necessary.
 
 ---
 
-## Original repo description (unchanged except to disable external hosted links):
+## Original repo description (unchanged except to defang external resources, but links are preserved if you view this README.md as a raw file):
 <!-- <div align="center">
   <img src="https://assets.hackclub.com/flag-standalone.svg" width="100" alt="flag">
   <h1>cdn.hackclub.com</h1>
