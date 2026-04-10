@@ -3,7 +3,7 @@
 >
 >**TECHNICAL AUDIT NOTICE**
 >
->This repository is a static archive preserved for forensic auditing and youth safeguarding oversight.
+>This repository is a **static archive** preserved for forensic auditing and youth safeguarding oversight.
 >
 
 > [!IMPORTANT]
@@ -24,7 +24,7 @@
 
 Technical Safety Note:
 
-All passive tracking pixels, hotlinked assets, and telemetry badges have been DEFANGED to prevent the Hack Club infrastructure (Nora/Max) from logging the IP addresses of researchers. The only active link remaining is the direct invitation to the Slack environment, which should only  be accessed if necessary using appropriate secure procedures.
+All passive tracking pixels, hotlinked assets, and telemetry badges have been DEFANGED to prevent the Hack Club infrastructure management (Nora/Max/Zach/etc.) from logging the IP addresses of researchers. The only active link remaining is the direct invitation to the Slack environment, which should only  be accessed if necessary using appropriate secure procedures.
 
 ---
 
